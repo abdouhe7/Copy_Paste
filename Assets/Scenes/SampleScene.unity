@@ -152,6 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e21f477b680e89f4c946787d7a810bb6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Copied: {fileID: 0}
   Selected: {fileID: 0}
   _UiManger: {fileID: 1288417728}
 --- !u!4 &559633918
@@ -541,7 +542,7 @@ MonoBehaviour:
   Cube: {fileID: 0}
   _MainManger: {fileID: 559633917}
   contextMenuPre: {fileID: 7903255572928534903, guid: 8ec145dd0386cae468210e961c6d00e9, type: 3}
-  contextMenu: {fileID: 7903255572928534903, guid: 8ec145dd0386cae468210e961c6d00e9, type: 3}
+  contextMenu: {fileID: 0}
   hitPostion: {x: 0, y: 0, z: 0}
 --- !u!114 &1288417729
 MonoBehaviour:

@@ -6,7 +6,7 @@ namespace Micronix
     {
         bool copy;
             
-        private GameObject Copied;
+        public GameObject Copied;
         public GameObject Selected;
         public UiManger _UiManger;
         
@@ -20,6 +20,7 @@ namespace Micronix
         public void Cut()
         {
             Copied = Selected;
+            Selected.SetActive(false);
             Copied.transform.position = _UiManger.hitPostion;
             Destroy(_UiManger.contextMenu);
             copy = false;
@@ -35,6 +36,7 @@ namespace Micronix
             Copied.transform.position = _UiManger.hitPostion;
             //reset the defalt placeof the cube
             _UiManger.Cube = null;
+            Selected.SetActive(true);
             Destroy(_UiManger.contextMenu);
         }
     }
